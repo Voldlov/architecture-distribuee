@@ -3,7 +3,7 @@ import json
 import requests
 import time
 from datetime import datetime, timedelta
-from tools import get_keys_and_join_from_currencies_file, get_symbol_from_name
+from python.tools import get_keys_and_join_from_currencies_file, get_symbol_from_name
 
 currencies_id_query_string = get_keys_and_join_from_currencies_file('id', ',')
 url = 'https://api.coingecko.com/api/v3/simple/price?ids={}&vs_currencies=usd'.format(currencies_id_query_string)
