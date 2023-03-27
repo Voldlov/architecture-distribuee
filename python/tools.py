@@ -19,6 +19,9 @@ def get_symbol_from_name(name):
         if item['id'] == name:
             return item['symbol']
 
+def get_keys():
+    pass
+
 
 def get_keys_and_join_from_currencies_file(key, join_separator, add_hashtag=False):
     currencies = get_currencies()
