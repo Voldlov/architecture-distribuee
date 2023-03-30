@@ -1,10 +1,13 @@
+# pip install python-dotenv
 from dotenv import load_dotenv
+# pip install kafak
 from kafka import KafkaProducer
+# pip install tweepy
 import tweepy
 import os
 import json
 from datetime import datetime, timedelta
-from python.tools import get_keys_and_join_from_currencies_file
+from tools import get_keys_and_join_from_currencies_file
 
 load_dotenv()
 BEARER_TOKEN = os.getenv("TWITTER_BEARER_TOKEN")
