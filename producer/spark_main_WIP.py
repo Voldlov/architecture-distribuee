@@ -5,6 +5,7 @@ import os
 import time
 from dotenv import load_dotenv
 from datetime import datetime, timedelta
+# pip install pyspark
 from pyspark.sql import SparkSession
 from pyspark.sql.types import StringType, StructType, StructField, TimestampType, DoubleType, ArrayType
 from pyspark.sql.functions import from_json, udf, col, array_contains, split, count
