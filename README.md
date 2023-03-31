@@ -35,9 +35,9 @@ Utiliser la commande suivante pour lancer le Docker File.
 
 `docker build -t archi_distribuee ./docker `
 
-Utiliser la commande suivante pour lancer le Docker Compose.
+Utiliser la commande suivante pour lancer le Docker Compose, le "-d" permet de le lancer en fond.
 
-`docker-compose -f ./docker/docker-composer.yml up`
+`docker-compose -f ./docker/docker-compose.yml up -d`
 
 
 The docker compose file create and use a spark master, two workers, one jupyter notebook with spark and one kafka container.
