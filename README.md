@@ -67,3 +67,25 @@ The correct command to start the script "spark_kafka.py" should be
 `spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.0.0 spark_kafka.py`
 
 Still investigating the best way to use this.
+
+## Architecture du dossier
+
+### Producer
+
+Tout les producers utilisés pour le programme.
+
+#### coingecko_producer
+
+Le producer coingecko récupère les données de l'API "coingecko" par rapport au crypto choisit dans le fichier currencies.json.
+
+#### twitter_producer
+
+Le producer twitter permettait de récupérer des twittes. Depuis le rachat de twitter par Mr Musk, c'est devenu payant, nous cherchons une autre solution à la place.
+
+#### tools
+
+Le fichier tools.py contient toute les fonctions utiles aux producers. 
+
+#### currencies
+
+Le fichier currencies.json contient les cryptos étudiées. 
