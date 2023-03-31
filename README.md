@@ -11,11 +11,11 @@
 ### Outils
 
 - Trello (gestion de projet) : https://trello.com/invite/b/EuYMDhT2/ATTI44375d96b82a0c5a0bcf8aca40e7dd88C6661CD2/architecture-distribuee 
-- Github (répot) : https://github.com/Voldlov/architecture-distribuee.git 
-- Python (langage)
+- Github (dépôt) : https://github.com/Voldlov/architecture-distribuee.git 
+- Langage : Python
 - Docker
-- Spark
-- Kafka
+- Spark & kafka
+- Visualisation : Grafana
 
 ## Consignes
 
@@ -25,13 +25,13 @@
 
 ### Travail préliminaire
 
-Contexte métier, objectif et sources de données
-Choisir les technologies 
+Nous sommes des futurs Data Engineer, dans le cadre de la fin du module "Architecture distribuée", lors de notre première année de Master chez Paris Ynov campus nous avons décidé de prendre comme sujet les cryptomonaies par rapport aux twittes. 
 
+Notre objectif est de voir et comprendre l'impacte de ce réseau social sur la valeur des diverses monaies. 
 
 ## Utiliser les fichiers
 
-Utiliser la commande suivante pour lancer le Docker File. 
+Utiliser la commande suivante pour lancer le Docker File (il est normalement lancé avec le Docker Compose.)
 
 `docker build -t archi_distribuee ./docker `
 
@@ -39,9 +39,7 @@ Utiliser la commande suivante pour lancer le Docker Compose, le "-d" permet de l
 
 `docker-compose -f ./docker/docker-compose.yml up -d`
 
-
-The docker compose file create and use a spark master, two workers, one jupyter notebook with spark and one kafka container.
-Additionally a zookeeper container is present as a kafka container, ignore that.
+Le fichier Docker Compose créer et utilise un Master Spark, deux workers, un jupyer notebook avec des contenneurs spark et kafka. Il y a aussi présent Zookeeper. 
 
 ### Kafka
 
