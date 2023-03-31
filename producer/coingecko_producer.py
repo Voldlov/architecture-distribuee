@@ -1,3 +1,4 @@
+# pip install kafka
 from kafka import KafkaProducer
 import json
 import requests

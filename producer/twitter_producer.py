@@ -7,12 +7,12 @@ import tweepy
 import os
 import json
 from datetime import datetime, timedelta
-from tools import get_keys_and_join_from_currencies_file
+from tools import get_keys_and_join_from_currencies_file as gk
 
 load_dotenv()
 BEARER_TOKEN = os.getenv("TWITTER_BEARER_TOKEN")
 
-currencies_symbol_join_string = get_keys_and_join_from_currencies_file('symbol', ' OR ', add_hashtag=True)
+currencies_symbol_join_string = gk('symbol', ' OR ', add_hashtag=True)
 
 producer = KafkaProducer(bootstrap_servers='broker:29092')
 
