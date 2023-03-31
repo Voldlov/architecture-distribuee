@@ -16,7 +16,7 @@ COPY --from=node /usr/local /usr/local
 # Ajout du fichier du répertoire courrant vers l'image en construction.
 # ADD remplacé par COPY qui est plus sécurisé et simple
 COPY custom-run.sh /custom-run.sh
-RUN chmod +x /custom-run.sh
+#RUN chmod +x /custom-run.sh
 
 # Installation des dépendances et configuration de grafana
 RUN apk update \
@@ -30,4 +30,5 @@ RUN apk update \
     && sed -i 's/;allow_loading_unsigned_plugins =.*/allow_loading_unsigned_plugins = jamesosgood-grafana-mongodb-datasource/g' $GF_PATHS_CONFIG
 
 # Lancement de costum-run.sh
+#RUN chmod +x /custom-run.sh
 ENTRYPOINT ["/custom-run.sh"]
