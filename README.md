@@ -70,6 +70,12 @@ Still investigating the best way to use this.
 
 ## Architecture du dossier
 
+### docker
+
+### Spark
+
+### visualisation
+
 ### Producer
 
 Tout les producers utilisés pour le programme.
