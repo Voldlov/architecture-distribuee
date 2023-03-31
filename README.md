@@ -31,9 +31,11 @@ Choisir les technologies
 
 ## Utiliser les fichiers
 
-Use docker compose to start the containers
+Utiliser la commande suivante pour lancer le Docker File. 
 
 `docker build -t archi_distribuee ./docker `
+
+Utiliser la commande suivante pour lancer le Docker Compose.
 
 `docker compose up -d`
 
