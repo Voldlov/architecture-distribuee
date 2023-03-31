@@ -69,14 +69,20 @@ services:
     depends_on:
       - spark-master
 
-# Ajout de grafana, à tester
   grafana:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: grafana/grafana:latest
+    container_name: grafana
     restart: always
-    volumes:
-     - ./data:/var/lib/grafana
-     - /var/lib/grafana/plugins
     ports:
-     - 3000:3000
+      - 3001:3000
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - grafana-plugins:/var/lib/grafana/plugins
+      - ./grafana/provisioning:/etc/grafana/provisioning
+      - ./grafana/dashboards:/var/lib/grafana/dashboards
+    depends_on:
+      - broker
+
+volumes:
+  grafana-data:
+  grafana-plugins:

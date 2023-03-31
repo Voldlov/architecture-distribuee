@@ -37,7 +37,7 @@ Utiliser la commande suivante pour lancer le Docker File.
 
 Utiliser la commande suivante pour lancer le Docker Compose.
 
-`docker compose up -d`
+`docker-compose -f ./docker/docker-composer.yml up`
 
 
 The docker compose file create and use a spark master, two workers, one jupyter notebook with spark and one kafka container.
