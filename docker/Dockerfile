@@ -1,6 +1,9 @@
 # Spécification de l'image de base à utiliser pour la première étape de la construction de l'image.
 FROM node:16-alpine AS node
 
+# Spécifie l'utilisateur qui exécutera les commandes suivantes.
+USER root
+
 # Utiliser l'image officielle de grafana OSS.
 FROM grafana/grafana-oss
 
