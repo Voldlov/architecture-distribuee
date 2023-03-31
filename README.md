@@ -34,6 +34,7 @@ Choisir les technologies
 Use docker compose to start the containers
 
 `docker build --user root -t archi_distribuee ./docker `
+
 `docker compose up -d`
 
 
