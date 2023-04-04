@@ -70,6 +70,15 @@ The correct command to start the script "spark_kafka.py" should be
 
 Still investigating the best way to use this.
 
+### Grafana 
+
+Accéder à Grafana :
+
+`http://localhost:3001/login`
+
+- login : "admin"
+- mot de passe : "admin"
+
 ## Architecture du dossier
 
 ### docker
