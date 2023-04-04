@@ -70,7 +70,7 @@ The correct command to start the script "spark_kafka.py" should be
 
 Still investigating the best way to use this.
 
-### Grafana 
+### Grafana / mongoDB
 
 Accéder à Grafana :
 
@@ -78,6 +78,8 @@ Accéder à Grafana :
 
 - login : "admin"
 - mot de passe : "admin"
+
+Lien vers mongoDB : mongodb+srv://Stinson:Stinson@stinson.rcfzhzz.mongodb.net/?retryWrites=true&w=majority 
 
 ## Architecture du dossier
 
