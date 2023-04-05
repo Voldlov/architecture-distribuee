@@ -83,8 +83,8 @@ Lien vers mongoDB : mongodb+srv://Stinson:Stinson@stinson.rcfzhzz.mongodb.net/?r
 
 pour installer le plugin mongodb à grafana :
 
-1. utiliser le fichier de :
-2. le mettre dans le fihcier plugins de grafana avec cette commande : `docker cp mongodb-grafana 9f6c6b7a71d2:/usr/share/grafana/public/app/plugins`
+1. utiliser le dossier dans visualisation portant le nom "mongodb-grafana".
+2. le mettre dans le fihcier plugins de grafana avec cette commande : `docker cp mongodb-grafana 9f6c6b7a71d2:/var/lib/grafana/plugins`
 
 ## Architecture du dossier
 
